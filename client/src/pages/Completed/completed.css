@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.finBtn{
+   
+    
+}
+.finBtn:hover{
+    transform: scale(1.2);
+}

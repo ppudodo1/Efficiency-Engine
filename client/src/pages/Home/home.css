@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito';
+}
+
+.home{
+    display: flex;
+    background-color: rgb(15, 18, 63);
+}
+.sideBar{
+    color: white;
+    width: 14%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sideBar h1{
+    font-size: 30px;
+    margin-top: 20px;
+}
+.sideBar button{
+    width: 150px;
+    border: none;
+    color: white;
+    background-color: rgb(15, 18, 63);
+    margin-bottom: 70px;
+    font-size: 22px;
+    border-radius: 10px;
+    height: 40px;
+    transition: 0.5s all;
+}
+
+.first{
+    margin-top: 50px;
+}
+.sideBar button:hover{
+    background-color: rgb(175, 144, 235);
+}
+
+.mainBar{
+
+    height: 96vh;
+    width: 85%;
+    margin: 15px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: auto;
+    
+}
+.buttons{
+    width: 100%;
+  
+    display: flex;
+    justify-content: center;
+}
+.buttons button{
+    
+    width: 250px;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    background-color: rgb(175, 144, 235);
+    border: none;
+    border-radius: 20px;
+    height: 50px;
+    color: white;
+    transition:0.5s all;
+    font-size: 25px;
+}
+.last{
+    margin-bottom: 100px;
+}
+.buttons button:hover{
+    transform: scale(1.05);
+}
+.in{
+    margin-top: 250px;
+    margin-right: 150px;
+    display: flex;
+  
+    justify-content: right;
+    position: fixed;
+    bottom: 70px;
+    right: 0;
+}
+.in button{
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 100%;
+    font-size: 55px;
+    background-color:rgb(175, 144, 235) ;
+    color: white;
+    transition: 0.7s all;
+}
+.in button:hover{
+    background-color: white;
+    color: rgb(175, 144, 235);
+    transform: scale(1.02);
+    border: 2px solid rgb(175, 144, 235);
+    font-size: 60px;
+}
+ 
+
+@media (max-width:1700px) {
+    .sideBar h1{
+        text-align: center;
+    }
+    .sideBar button{
+        width: 120px;
+        font-size: 18px;
+    }
+    
+}
+@media (max-width:1100px) {
+    .home{
+        flex-direction: column;
+    }
+    .sideBar{
+        width: 100%;
+        height: 10vh;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .sideBar h1{
+        margin: 0;
+        margin-right: 10px;
+    }
+    .first{
+        margin: 0;
+    }   
+    .sideBar button{
+        width: 140px;
+        font-size: 20px;
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+    
+   .txt{
+        width: 20%;
+        height: 100%;
+   }
+   .mainBar{
+    margin: 0;
+    width: 100%;
+    height: 90vh;
+    border-radius: 0px;
+    }
+    .in{
+        margin-right: 80px;
+        bottom: 50px;
+    }
+}
+@media (max-width:865px) {
+    .sideBar{
+        height:35vh;
+        flex-direction: column;
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+    .sideBar button{
+        margin-top: 10px;
+    }
+    .mainBar{
+       overflow: auto;
+    }
+}
+@media (max-width:696px) {
+    .buttons button{
+      
+        height: 40px;
+        font-size: 18px;
+        width: 150px;
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+   
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+    .in{
+        margin: 0;
+        position: relative;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        bottom: 0px;
+    }
+    .in button{
+        height: 50px;
+        width: 400px;
+        border: none;
+        border-radius: 20px;
+        font-size: 30px;
+    }
+    .in button:hover{
+        font-size: 30px;
+    }
+    
+}

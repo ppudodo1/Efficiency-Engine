@@ -1,0 +1,10 @@
+.progress-container{
+    width: 70%;
+    height: 80%;
+    box-shadow: 1px 1px 6px 4px rgb(240, 202, 244);
+    border-radius: 20px;
+    text-align: center;
+}
+.progress-container h1{
+    margin-top: 40px;
+}
