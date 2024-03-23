@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(15, 18, 63);
+}
+.registerOption{
+    background-color: white;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.registerOption input{
+    width: 65%;
+    border: none;
+    border-bottom: 1px solid rgb(219, 219, 219);    
+    height: 35px;
+    outline: none;
+    transition: 0.2s all;
+    
+}
+.registerOption input::placeholder{
+    padding: 8px;
+    font-size: 14px;
+}
+.refisterOption input:focus{
+    border: 1px solid rgb(109, 58, 213);
+    border-radius: 12px;
+   
+}¸
+.registerOption input:hover{
+    border: 1px solid rgb(109, 58, 213);
+    border-radius: 12px;
+   
+}
+.registerOption :nth-child(1){
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+.registerOption button{
+    margin-top: 30px;
+    
+    width: 200px;
+    height: 35px;
+    font-size: 17px;
+    border-radius: 15px;
+    border: 1.2px solid white;
+    background-color: rgb(109, 58, 213);
+    color: white;
+    transition: 0.3s all;
+}
+.registerOption button:hover{
+    transform: scale(1.05);
+    border: 1.2px solid rgb(109, 58, 213);
+    background-color: white;
+    color: rgb(109, 58, 213);
+}

@@ -1,0 +1,33 @@
+.daily{
+    display: flex;
+    margin: 10px;
+
+   height: 250px;
+   align-items: center;
+   justify-content: center;
+}
+.resBtn{
+    
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.next{
+  
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(175, 144, 235);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.5s all;
+}
+.next:hover{
+    background-color: white;
+    color: rgb(175, 144, 235);
+    border: 1px solid rgb(175, 144, 235);
+    transform: scaleX(1.1);
+}

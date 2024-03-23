@@ -1,0 +1,136 @@
+.newTask{
+    text-align: center;
+}
+.newTask h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.taskName{
+    width: 40%;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid rgb(175, 144, 235);
+    box-shadow: 1px 1px 6px 1px rgb(240, 202, 244);
+ 
+}
+.taskName:focus{
+    outline: none;
+}
+.taskName::placeholder{
+    text-align: center;
+}
+.pCat{
+    padding: 20px;
+}
+.cat{
+    border: 1px solid rgb(175, 144, 235);
+    box-shadow: 1px 1px 6px 1px rgb(240, 202, 244);
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cat button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(175, 144, 235);
+    color: white;
+    font-size: 18px;
+    transition: all 1s;
+}
+.cat button:hover{
+    transform: scale(1.1);
+}
+.cat button:focus{
+    background-color: white;
+    color: rgb(175, 144, 235);
+    border: 1px solid rgb(175, 144, 235);
+}
+.txt{
+    width: 40%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.around{
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.dat{
+    
+    width: 50%;
+}
+.tim {
+    width: 50%;
+}
+.around input{
+    width: 150px;
+    height: 30px;
+    border: 1px solid rgb(175, 144, 235);
+    border-radius: 10px;
+    text-align: center;
+    
+}
+.moreBtns{
+  
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.moreBtns button{
+    width: 200px;
+    margin-top: 50px;
+  
+    margin-bottom: 100px;
+    background-color: rgb(175, 144, 235);
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    color: white;
+    transition:0.5s all;
+    font-size: 15px;
+}
+.moreBtns button:hover{
+    transform: scale(1.2);
+}
+@media (max-width:1100px) {
+    .taskName{
+        width: 500px;
+    }
+    .cat{
+        width: 500px;
+    }
+    .txt{
+        width: 500px;
+    }
+}
+@media (max-width:569px) {
+    .taskName{
+        width: 330px;
+    }
+    .cat{
+        width: 330px;
+    }
+    .cat button{
+        width: 100px;
+    }
+    .txt{
+        width: 330px;
+    }
+    .moreBtns{
+        width: 100%;
+    }
+    .moreBtns button{
+        width: 120px;
+    }
+}

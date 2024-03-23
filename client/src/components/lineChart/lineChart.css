@@ -1,0 +1,15 @@
+.chart-container{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 45vh;
+    
+}
+.outside{
+    
+    height: 50vh;
+    margin: 20px;
+  
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px 3px rgb(240, 202, 244);
+}

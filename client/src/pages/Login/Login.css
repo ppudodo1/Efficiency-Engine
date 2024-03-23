@@ -1,0 +1,104 @@
+body{
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, rgb(175, 144, 235), rgb(109, 58, 213), rgb(45, 9, 117), #ff357f 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+            animation: AnimateBG 20s ease infinite;
+}
+@-webkit-keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+@keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.loginOption{
+    background-color: white;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.loginOption input{
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid rgb(219, 219, 219);    
+    height: 35px;
+    outline: none;
+    transition: 0.2s all;
+    
+}
+.loginOption input::placeholder{
+    padding: 10px;
+    font-size: 16px;
+}
+.loginOption input:focus{
+    border: 1px solid rgb(109, 58, 213);
+    border-radius: 12px;
+   
+}¸
+.loginOption input:hover{
+    border: 1px solid rgb(109, 58, 213);
+    border-radius: 12px;
+   
+}
+.loginOption :nth-child(1){
+    margin-top: 150px;
+}
+.loginButton{
+    margin-top: 30px;
+    
+    width: 200px;
+    height: 35px;
+    font-size: 17px;
+    border-radius: 15px;
+    border: 1.2px solid white;
+    background-color: rgb(109, 58, 213);
+    color: white;
+    transition: 0.3s all;
+}
+
+.loginButton:hover{
+    transform: scale(1.05);
+    border: 1.2px solid rgb(109, 58, 213);
+    background-color: white;
+    color: rgb(109, 58, 213);
+}
+.newAccount{
+    margin-top: 30px;
+    
+    width: 200px;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 15px;
+    border: 1.2px solid white;
+    background-color: rgb(109, 58, 213);
+    color: white;
+    transition: 0.3s all;
+}
+.newAccount:hover{
+    transform: scale(1.05);
+    border: 1.2px solid rgb(109, 58, 213);
+    background-color: white;
+    color: rgb(109, 58, 213);
+}

@@ -1,0 +1,49 @@
+.comp{
+    margin-bottom: 40px;
+    
+    box-shadow: 1px 1px 6px 1px rgb(240, 202, 244);
+    padding:20px;
+    border-radius: 20px;
+    width: 60%;
+    margin-left: 15%;
+    transition: 0.5s all;
+}
+.comp:hover{
+    transform: scale(1.02)
+}
+hr{
+    margin-bottom: 20px;
+}
+.comp p{
+    margin-top: 10px;
+}
+.fin{
+    display: flex;
+    justify-content: space-between;
+}
+.finished{
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: rgb(175, 144, 235);
+    border-radius: 100%;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.5s all;
+    margin-right: 10px;
+}
+.finished:hover{
+
+    background-color: white;
+    color: rgb(175, 144, 235);
+    border: 2px solid rgb(175, 144, 235);
+}
+@media (max-width:640px) {
+    .finished{
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        margin-right: 5px;
+    }
+}
