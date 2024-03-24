@@ -5,7 +5,6 @@ import authRoute from "./routes/auth.js"
 import userRoute from "./routes/users.js"
 import dotenv from "dotenv";
 const app = express();
-import User from "./models/User.js";
 dotenv.config();
 let test;
 const connectToDataBase = async ()=>{
@@ -31,14 +30,8 @@ app.use(cors({
     origin: 'https://deploy-mern-82v2cgx2d-dodos-projects-c4168a69.vercel.app/'
 }));
 
-app.get("/api/user/getTaskByIndex/:id/:index", async(req, res) => {
-    try {
-        const user = await User.findById(req.params.id);
-        
-        res.status(200).json(user.tasks[req.params.index]);
-    } catch (error) {
-        throw error;
-    } // You can customize this response as needed
+app.get("/", (req, res) => {
+    res.send("Hello world"); // You can customize this response as needed
   });
 
 app.use("/api/auth",authRoute);
