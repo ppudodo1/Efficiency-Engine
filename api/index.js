@@ -33,7 +33,9 @@ app.use(cors({
 app.get("/", (req, res) => {
     res.send("Hello world"); // You can customize this response as needed
   });
-
+app.use("/test",(req,res)=>{
+    res.send("Ovo je testna ruta");
+})
 app.use("/api/auth",authRoute);
 app.use("/api/user",userRoute);
 app.listen(4000,()=>{
