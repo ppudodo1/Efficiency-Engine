@@ -31,7 +31,7 @@ app.use(cors({
     origin: 'https://deploy-mern-82v2cgx2d-dodos-projects-c4168a69.vercel.app/'
 }));
 
-app.get("/api/user/getTaskByIndex/:id/:index", (req, res) => {
+app.get("/api/user/getTaskByIndex/:id/:index", async(req, res) => {
     try {
         const user = await User.findById(req.params.id);
         
