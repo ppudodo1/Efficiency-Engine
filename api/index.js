@@ -26,7 +26,9 @@ mongoose.connection.on("connected",()=>{
 });
 
 app.use(express.json())
-app.use(cors());
+app.use(cors({
+    origin: 'https://deploy-mern-82v2cgx2d-dodos-projects-c4168a69.vercel.app/'
+}));
 
 app.get("/", (req, res) => {
     res.send("Hello world"); // You can customize this response as needed
