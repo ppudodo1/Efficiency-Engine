@@ -29,7 +29,7 @@ app.use(express.json())
 app.use(cors());
 
 app.get("/", (req, res) => {
-    res.send("Welcome to the API",test); // You can customize this response as needed
+    res.send(test); // You can customize this response as needed
   });
 
 app.use("/api/auth",authRoute);
