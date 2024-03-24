@@ -21,7 +21,7 @@ function Login() {
     dispatch({type:"LOGIN_START"});
     try {
       //console.log("credentials: ", credentials);
-        const res = await axios.post("http://localhost:4000/api/auth/login",credentials);
+        const res = await axios.post("https://deploy-mern-82v2cgx2d-dodos-projects-c4168a69.vercel.app/api/auth/login",credentials);
         dispatch({type:"LOGIN_SUCCESS",payload:res.data});
         navigate("/");
     } catch (error) {

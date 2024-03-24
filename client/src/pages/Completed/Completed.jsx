@@ -8,7 +8,7 @@ function Completed() {
 
     const {user}= useContext(AuthContext);
     const id = user._id;
-    const {data,loading,err,reFetch} = useFetch(`http://localhost:4000/api/user/completed/${id}`);
+    const {data,loading,err,reFetch} = useFetch(`https://deploy-mern-82v2cgx2d-dodos-projects-c4168a69.vercel.app/api/user/completed/${id}`);
 
     if (loading) {
         return <p>Loading...</p>;

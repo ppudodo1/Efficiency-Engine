@@ -24,7 +24,7 @@ function Satisfatcion({index}) {
       return formattedDate;
     }
     const calculate= async ()=>{
-        let data = await axios.get(`http://localhost:4000/api/user/getTaskByIndex/${user._id}/${index}`)
+        let data = await axios.get(`https://deploy-mern-82v2cgx2d-dodos-projects-c4168a69.vercel.app/api/user/getTaskByIndex/${user._id}/${index}`)
         let dif;
         console.log("Data: ",data.data.firstTime);
         const [hours,minutes]= data.data.firstTime.split(":").map(Number);
@@ -48,7 +48,7 @@ function Satisfatcion({index}) {
        
         const formattedDate = formatDate(d);
         try {
-            const res = await axios.put(`http://localhost:4000/api/user/points/${user._id}`,{
+            const res = await axios.put(`https://deploy-mern-82v2cgx2d-dodos-projects-c4168a69.vercel.app/api/user/points/${user._id}`,{
               acquiredPoints:{
                 points:points,
                 time:formattedDate

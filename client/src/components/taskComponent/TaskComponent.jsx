@@ -17,17 +17,17 @@ function TaskComponent({
 }) {
   const {user} = useContext(AuthContext);
   const id = user._id
-  const {data} = useFetch(`http://localhost:4000/api/user/getAllTasks/${id}`)
+  const {data} = useFetch(`https://deploy-mern-82v2cgx2d-dodos-projects-c4168a69.vercel.app/api/user/getAllTasks/${id}`)
   const[finito,setFinito] = useState(false);
   let location = useLocation();
   let index = data.findIndex(task => task.title === taskTitle);
   const completedTask = ()=>{
-    axios.post(`http://localhost:4000/api/user/changeTask/${id}/${index}`)
+    axios.post(`https://deploy-mern-82v2cgx2d-dodos-projects-c4168a69.vercel.app/api/user/changeTask/${id}/${index}`)
 
    //window.location.reload();
   }
   const deleteTask = ()=>{
-    axios.delete(`http://localhost:4000/api/user/removeTaskByIndex/${id}/${index}`)
+    axios.delete(`https://deploy-mern-82v2cgx2d-dodos-projects-c4168a69.vercel.app/api/user/removeTaskByIndex/${id}/${index}`)
     window.location.reload();
   }
   //console.log("Task component: ",location.pathname)

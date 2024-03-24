@@ -18,8 +18,8 @@ function Register() {
     dispatch({type:"LOGIN_START"})
     try {
       
-      const reg = await axios.post("http://localhost:4000/api/auth/register",credentials);
-      const log = await axios.post("http://localhost:4000/api/auth/login",credentials);
+      const reg = await axios.post("https://deploy-mern-82v2cgx2d-dodos-projects-c4168a69.vercel.app/api/auth/register",credentials);
+      const log = await axios.post("https://deploy-mern-82v2cgx2d-dodos-projects-c4168a69.vercel.app/api/auth/login",credentials);
         dispatch({type:"LOGIN_SUCCESS",payload:log.data});
         navigate("/");
       

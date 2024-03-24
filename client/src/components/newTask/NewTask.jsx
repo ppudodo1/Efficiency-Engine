@@ -35,7 +35,7 @@ function NewTask() {
   const handleSubmit = async (e)=>{
     e.preventDefault();
     try {
-      const res = await axios.put(`http://localhost:4000/api/user/tasks/${id}`,
+      const res = await axios.put(`https://deploy-mern-82v2cgx2d-dodos-projects-c4168a69.vercel.app/api/user/tasks/${id}`,
       {
         tasks:formData
       });
