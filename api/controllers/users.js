@@ -157,3 +157,6 @@ export const deleteTaskByIndex = async (req,res)=>{
     }
 
 }
+export const getTest = async(req,res)=>{
+    res.send("Ovo je testna ruta 2")
+}

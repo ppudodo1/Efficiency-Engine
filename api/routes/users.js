@@ -1,5 +1,5 @@
 import express from "express";
-import { weeklyGoal,monthlyGoal,yearlyGoal, updatePoints, updateTasks, getPendingTasks, getCompletedTasks, getUserData, changeTask, getAllTask, getTaskByIndex, deleteTaskByIndex } from "../controllers/users.js";
+import { weeklyGoal,monthlyGoal,yearlyGoal, updatePoints, updateTasks, getPendingTasks, getCompletedTasks, getUserData, changeTask, getAllTask, getTaskByIndex, deleteTaskByIndex,getTest } from "../controllers/users.js";
 
 
 const router = express.Router();
@@ -15,6 +15,7 @@ router.get("/data/:id",getUserData);
 router.post("/changeTask/:id/:taskNumber",changeTask);
 router.get("/getAllTasks/:id",getAllTask);
 router.get("/getTaskByIndex/:id/:index",getTaskByIndex);
+router.get("/test",getTest);
 router.delete("/removeTaskByIndex/:id/:index",deleteTaskByIndex);
 
 export default router;
