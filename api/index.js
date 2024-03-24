@@ -21,8 +21,14 @@ mongoose.connection.on("disconnected",()=>{
 mongoose.connection.on("connected",()=>{
     console.log("MongoDB connected")
 });
+
 app.use(express.json())
 app.use(cors());
+
+app.get("/", (req, res) => {
+    res.send("Welcome to the API"); // You can customize this response as needed
+  });
+
 app.use("/api/auth",authRoute);
 app.use("/api/user",userRoute);
 app.listen(4000,()=>{
