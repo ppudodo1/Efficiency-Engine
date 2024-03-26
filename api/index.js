@@ -10,7 +10,7 @@ let test;
 const connectToDataBase = async ()=>{
    
     try {
-        await mongoose.connect(process.env.MONGO);
+        await mongoose.connect("mongodb+srv://vercel-admin-user:5ME3dFDn@testni.athjbx4.mongodb.net/EEngine?retryWrites=true&w=majority");
     } catch (error) {
         throw error;
     }
