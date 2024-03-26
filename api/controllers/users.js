@@ -142,7 +142,8 @@ export const getTaskByIndex = async (req,res)=>{
         
         res.status(200).json(user.tasks[req.params.index]);
     } catch (error) {
-        throw error;
+        console.log(error)
+        res.status(500).send("Error occoured")
     }
 }
 export const deleteTaskByIndex = async (req,res)=>{
